@@ -1,0 +1,41 @@
+{
+  "name": "react-prototype",
+  "version": "0.0.0",
+  "description": "Prototype React app like good old jQuery days.",
+  "license": "MIT",
+  "repository": "EGOIST/react-prototype",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "bin": {
+    "rp": "./cli.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "echo lol"
+  },
+  "files": [
+    "cli.js",
+    "resource"
+  ],
+  "keywords": [
+    "react",
+    "prototype",
+    "jquery",
+    "fast",
+    "config-free"
+  ],
+  "xo": {
+    "semicolon": false
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "is-url": "^1.2.1",
+    "meow": "^3.7.0",
+    "opn": "^4.0.0"
+  }
+}
