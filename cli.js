@@ -31,10 +31,9 @@ const cli = meow(`
 	}
 })
 
-app.use('/resource', express.static('resource'));
 app.use('/local', express.static(process.cwd()))
 
-app.use(function (req, res) {
+app.use((req, res) => {
 	const script = cli.input[0] || 'app.jsx'
 	let lib = cli.flags.lib
 	if (!Array.isArray(lib)) {
