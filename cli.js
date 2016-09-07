@@ -15,7 +15,7 @@ const cli = meow(`
     -p/--port:     server port
     -v/--version:  output version number
     -h/--help:     output help infomation
-    -l/--lib:      use libraries from npmcdn.com
+    -l/--lib:      use libraries from unpkg.com
     -q/--quiet:    quiet mode
 `, {
 	alias: {
@@ -43,7 +43,7 @@ app.use((req, res) => {
 		if (isUrl(name)) {
 			return `<script src="${name}"></script>`
 		}
-		return `<script src="https://npmcdn.com/${name}"></script>`
+		return `<script src="https://unpkg.com/${name}"></script>`
 	})
 	lib = lib.concat([`<script type="text/babel" src="/local/${script}"></script>`]).join('\n')
 

@@ -33,12 +33,12 @@ $ rp app.jsx
 # it will open http://localhost:3030 for you
 ```
 
-It's not enough? Okay, [npmcdn.com](http://npmcdn.com) is here to help:
+It's not enough? Okay, [unpkg.com](http://unpkg.com) is here to help:
 
 ```bash
 # you like redux?
 $ rp --lib redux/dist/redux.js
-# treated as https://npmcdn.com/redux/dist/redux.js
+# treated as https://unpkg.com/redux/dist/redux.js
 # yes! benifits from npm!
 
 # one more?
@@ -61,7 +61,7 @@ $ rp -h
     -p/--port:     server port
     -v/--version:  output version number
     -h/--help:     output help infomation
-    -l/--lib:      use libraries from npmcdn.com
+    -l/--lib:      use libraries from unpkg.com
     -q/--quiet:    quiet mode
 ```
 
